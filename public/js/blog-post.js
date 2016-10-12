@@ -19,4 +19,17 @@ $(document).ready(function(){
         });
     }();
     // 右边栏进入 结束
+    // 右边栏跷跷板 开始
+    + function(){
+        $('.right-recent-comments').addTeeterboard();
+        $('.right-about').addTeeterboard();
+        $('.right-time').addTeeterboard();
+        $('.right-links').addTeeterboard();
+    }();
+    // 右边栏跷跷板 结束
+    // 面包屑跷跷板 开始
+    + function(){
+        $('.breadcrumb').addTeeterboard(0.8);
+    }();
+    // 面包屑跷跷板 结束
 });

@@ -45,6 +45,12 @@
     background: red;
 }
 /*窗帘css结束*/
+
+/*面包屑css 开始*/
+.breadcrumb{
+    border: 1px solid rgba(78, 78, 78, 0.3);
+}
+
 .breadcrumb a:link,.breadcrumb a:visited {
     color: #333;
     text-decoration: none
@@ -54,7 +60,8 @@
     color: #716c68;
     text-decoration: underline
 }
-
+/*面包屑css 结束*/
+/*标题猫爪 开始*/
 @font-face {
     font-family: 'iconfont-title';
     src: url('icon/title/iconfont.eot');
@@ -70,3 +77,4 @@
     -moz-osx-font-smoothing: grayscale;
     margin-right: 0.1em
 }
+/*标题猫爪 结束*/

@@ -201,6 +201,8 @@ router.get('/:hash', function(req, res, next){
             }],
             js: [{
                 js_name: 'blog-post.js'
+            }, {
+                js_name: 'jq-plugins/jq-teeterboard.js'
             }]
         });
     })

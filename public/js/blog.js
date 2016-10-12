@@ -46,10 +46,10 @@ jQuery.fn.extend({
         $('.pag-detail span:last').html(total);
     },
     // 标签加3D效果，每次翻页后需要调用
-    'add3dToPostBlock': function(){
-        $('.blog-block').on('mouseover mousemove', function(ev){
+    'addTeeterboard': function(deg){
+        var moveDegree = deg || 3;
+        $(this).on('mouseover mousemove', function(ev){
             var event = ev || window.event;
-            var moveDegree = 3;
             var diffX = ev.clientX + $(window).scrollLeft() - $(this).offset().left - $(this).outerWidth() / 2;
             var diffY = ev.clientY + $(window).scrollTop() - $(this).offset().top - $(this).outerHeight() / 2;
             var tempX = - diffX / ($(this).outerWidth() / 2);
@@ -76,7 +76,7 @@ jQuery.fn.extend({
                 });
             }
         });
-        $('.blog-block').on('mouseout', function(){
+        $(this).on('mouseout', function(){
             $(this).css({
                 'transform': 'translateX(0)'
             });
@@ -100,11 +100,11 @@ $(document).ready(function(){
         }();
     }();
     // 页面读取博文阶梯入场 结束
-
     // 博文block悬停3D 开始
-    $(document).add3dToPostBlock();
+    + function(){
+        $('.blog-block').addTeeterboard();
+    }();
     // 博文block悬停3D 结束
-
     // 分页工具 开始
     + function(){
         $('.paging').updateShowPages();
@@ -195,7 +195,7 @@ $(document).ready(function(){
                 }, 150 * (enterIndex + 1), 'linear');
             })
             .then(function(){
-                $(document).add3dToPostBlock();
+                $('.blog-block').addTeeterboard();
             })
             .fail(function(err){
                 console.log(err);
@@ -203,7 +203,14 @@ $(document).ready(function(){
         });
     }();
     // 分页工具 结束
-
+    // 右边栏跷跷板 开始
+    + function(){
+        $('.right-recent-comments').addTeeterboard();
+        $('.right-about').addTeeterboard();
+        $('.right-time').addTeeterboard();
+        $('.right-links').addTeeterboard();
+    }();
+    // 右边栏跷跷板 结束
     // 右边栏进入 开始
     + function() {
         $(".right-panel").css({
@@ -213,4 +220,9 @@ $(document).ready(function(){
         });
     }();
     // 右边栏进入 结束
+    // 面包屑跷跷板 开始
+    + function(){
+        $('.breadcrumb').addTeeterboard(0.8);
+    }();
+    // 面包屑跷跷板 结束
 });
