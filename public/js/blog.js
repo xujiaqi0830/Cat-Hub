@@ -50,8 +50,8 @@ jQuery.fn.extend({
         var moveDegree = deg || 3;
         $(this).on('mouseover mousemove', function(ev){
             var event = ev || window.event;
-            var diffX = ev.clientX + $(window).scrollLeft() - $(this).offset().left - $(this).outerWidth() / 2;
-            var diffY = ev.clientY + $(window).scrollTop() - $(this).offset().top - $(this).outerHeight() / 2;
+            var diffX = ev.pageX - $(this).offset().left - $(this).outerWidth() / 2;
+            var diffY = ev.pageY + $(window).scrollTop() - $(this).offset().top - $(this).outerHeight() / 2;
             var tempX = - diffX / ($(this).outerWidth() / 2);
             var tempY = - diffY / ($(this).outerHeight() / 2);
             if(diffX < 0 && diffY < 0){

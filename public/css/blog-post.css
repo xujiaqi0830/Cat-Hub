@@ -15,6 +15,6 @@
 .p-blog-time{
     text-align: left;
     color: #696969;
-    margin: 0.4em 0 2em 0.8em;
+    margin: 0.4em 0 2em 0.8em !important;
 }
 /*博文页面-文章部分 结束*/
