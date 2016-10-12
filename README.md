@@ -1,4 +1,4 @@
-[![GitHub license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://raw.githubusercontent.com/JacksonTian/eventproxy/master/MIT-License)
+[![GitHub license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://raw.githubusercontent.com/xujiaqi0830/Cat-Hub/master/LICENSE)
 [![GitHub forks](https://img.shields.io/github/forks/xujiaqi0830/Cat-Hub.svg)](https://github.com/xujiaqi0830/Cat-Hub/network)
 [![GitHub stars](https://img.shields.io/github/stars/xujiaqi0830/Cat-Hub.svg)](https://github.com/xujiaqi0830/Cat-Hub/stargazers)
 # 项目简述
