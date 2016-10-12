@@ -1,3 +1,6 @@
+[![GitHub license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://raw.githubusercontent.com/JacksonTian/eventproxy/master/MIT-License)
+[![GitHub forks](https://img.shields.io/github/forks/xujiaqi0830/Cat-Hub.svg)](https://github.com/xujiaqi0830/Cat-Hub/network)
+[![GitHub stars](https://img.shields.io/github/stars/xujiaqi0830/Cat-Hub.svg)](https://github.com/xujiaqi0830/Cat-Hub/stargazers)
 # 项目简述
 
 ### 名称
@@ -8,7 +11,7 @@
 
 作者的个人站项目，包括博客、留言板、jsonp接口等功能。同步更新在[http://xujiaqi0830.com/blog](http://xujiaqi0830.com/) (部署于BAE)
 
-未来有意提炼出`Node.js`个人站框架。
+响应式布局，适配手机、PC端浏览器等不同分辨率的设备。
 
 ### 作者
 
@@ -19,16 +22,16 @@
 # 主要工具
 
  - 前端
-  - `HTML5`
-  - `CSS3`
-  - `Bootstrap`
-  - `jQuery`
+  - HTML5
+  - CSS3
+  - Bootstrap
+  - jQuery
 
  - 后端
-  - `Node.js`
-  - `Express`
-  - `Handlebars`
-  - 其余请见`package.json`文件
+  - Node.js
+  - Express
+  - Handlebars
+  - 其余请见package.json文件
 
  - 数据库
   - MySQL

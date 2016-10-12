@@ -171,7 +171,16 @@ router.get('/:hash', function(req, res, next){
         for(var x in result[0]){
             postSet[x] = result[0][x];
         }
-        postSet.post_content  = marked(result[0].post_content);
+        postSet.post_content = marked(result[0].post_content);
+        var tempTagArr = postSet.post_tags.split(',');
+        var tempTagSet = [];
+        for(var i = 0; i < tempTagArr.length; i += 1){
+            tempTagSet.push({
+                post_tagname: tempTagArr[i]
+            });
+        }
+        postSet.post_tags = tempTagSet;
+        postSet.post_time = moment(postSet.post_time).format('YYYY年M月D日 HH:MM:SS 发表');
         var postBread = {
             bread_href: '/blog/' + postSet.post_hash,
             bread_isActive: '',
@@ -185,6 +194,8 @@ router.get('/:hash', function(req, res, next){
             postSet: postSet,
             css: [{
                 css_name: 'blog.css'
+            }, {
+                css_name: 'blog-post.css'
             }, {
                 css_name: 'markdown.css'
             }],

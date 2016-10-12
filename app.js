@@ -6,14 +6,14 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 // var csurf = require('csurf');
 
-var routes = require('./routes/index');
-var board = require('./routes/board');
-var blog = require('./routes/blog');
+var routes = require('./routes/route-index');
+var board = require('./routes/route-board');
+var blog = require('./routes/route-blog');
 // var cat = require('./routes/cat');
-var jsonp = require('./routes/jsonp');
-var ajax = require('./routes/ajax');
-var about = require('./routes/about');
-var users = require('./routes/users');
+var jsonp = require('./routes/route-jsonp');
+var ajax = require('./routes/route-ajax');
+var about = require('./routes/route-about');
+var users = require('./routes/route-users');
 
 
 var app = express();

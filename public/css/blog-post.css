@@ -1,0 +1,20 @@
+/*博文页面-文章部分 开始*/
+.blog-container{
+    transform: perspective(800px) translateX(-5em);
+    opacity: 0;
+}
+.p-blog-title{
+    margin: 0.8em auto 0;
+    text-align: center;
+    /*border-bottom: 1px dotted #333;*/
+    padding-bottom: 0.8em;
+}
+.p-blog-tagBar{
+    margin: 0.4em 0 0 0.8em;
+}
+.p-blog-time{
+    text-align: left;
+    color: #696969;
+    margin: 0.4em 0 2em 0.8em;
+}
+/*博文页面-文章部分 结束*/

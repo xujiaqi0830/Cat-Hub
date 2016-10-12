@@ -73,7 +73,6 @@ h2 a:hover{
     width: 100%;
     font-size: 1.2em;
 }
-
 /*.blog-block br::after{
     content: "点击查看全文";
     background-color: orange;
@@ -118,7 +117,7 @@ h2 a:hover{
     font-size: 0.8em;
 }
 
-/*右边栏*/
+/*右边栏 开始*/
 .right-panel{
     transform: perspective(800px) translateX(5em);
     transition: all 0.2s ease-out;
@@ -169,8 +168,9 @@ h2 a:hover{
     -moz-osx-font-smoothing: grayscale;
     margin: auto .1em auto 0
 }
+/*右边栏-结束*/
 
-/*分页按钮*/
+/*分页按钮 开始*/
 .paging{
     padding: 0;
     margin: 1em auto;
@@ -228,3 +228,4 @@ h2 a:hover{
 .paging-disable{
 
 }
+/*分页按钮 结束*/

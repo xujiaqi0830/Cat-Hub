@@ -46,7 +46,7 @@ jQuery.fn.extend({
         $('.pag-detail span:last').html(total);
     },
     // 标签加3D效果，每次翻页后需要调用
-    'add3d': function(){
+    'add3dToPostBlock': function(){
         $('.blog-block').on('mouseover mousemove', function(ev){
             var event = ev || window.event;
             var moveDegree = 3;
@@ -102,7 +102,7 @@ $(document).ready(function(){
     // 页面读取博文阶梯入场 结束
 
     // 博文block悬停3D 开始
-    $(document).add3d();
+    $(document).add3dToPostBlock();
     // 博文block悬停3D 结束
 
     // 分页工具 开始
@@ -195,7 +195,7 @@ $(document).ready(function(){
                 }, 150 * (enterIndex + 1), 'linear');
             })
             .then(function(){
-                $(document).add3d();
+                $(document).add3dToPostBlock();
             })
             .fail(function(err){
                 console.log(err);
@@ -205,7 +205,7 @@ $(document).ready(function(){
     // 分页工具 结束
 
     // 右边栏进入 开始
-    +function() {
+    + function() {
         $(".right-panel").css({
             transform: "perspective(800px) translateX(0)",
             transition: "all 0.2s ease-out",
