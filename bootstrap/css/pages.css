@@ -1,0 +1,50 @@
+
+.paging li{
+    list-style: none;
+    float: left;
+    border: 1px #696969 solid;
+    margin: 0;
+    padding: 0.2em;
+    font-size: 0.9em;
+    line-height: 0.9em;
+    padding: 0.7em;
+    color: rgb(78, 78, 78);
+    cursor: pointer;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+.paging li:nth-child(3){
+    padding-left: 2em;
+    padding-right: 2em;
+}
+.paging li:nth-child(2n){
+    background: rgba(222, 222, 222, 0.9);
+    color: rgb(95, 95, 95);
+}
+.paging li:nth-child(4n+1){
+    background: rgba(235, 235, 235, 0.9);
+    color: rgb(78, 78, 78);
+}
+.paging li:nth-child(n+3){
+    border-left: none;
+}
+.paging li:nth-child(1){
+    border-radius: 0.3em 0 0 0.3em;
+    border-right: none;
+}
+.paging li:nth-last-child(1){
+    border-radius: 0 0.3em 0.3em 0 ;
+}
+.paging li:hover{
+    background: rgba(200, 200, 200, 0.9);
+}
+.paging li:nth-child(3):hover{
+    background: rgba(243, 243, 243, 0.6);
+}
+.paging li:active{
+    background: rgba(244, 244, 244, 0.9);
+}
+.paging li:nth-child(3):active{
+    background: rgba(238, 238, 238, 0.9);
+}

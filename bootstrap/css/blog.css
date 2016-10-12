@@ -1,0 +1,47 @@
+
+
+.blog-block{
+    /*height: 15em;*/
+    width: 85%;
+    border-bottom: 2px double #999999;
+    margin: 0 auto;
+}
+.blog-title-hr{
+    border: 1px dotted #333;
+}
+.blog-content{
+    width: 100%;
+}
+
+/*.blog-block br::after{
+    content: "点击查看全文";
+    background-color: orange;
+    border-radius: 0.2em;
+    color: white;
+}*/
+.blog-block a:link, .blog-block a:visited{
+    background-color: orange;
+    border-radius: 0.2em;
+    color: white;
+    text-decoration: none;
+    padding: 0.2em;
+}
+.blog-block a:hover, .blog-block a:active{
+    background-color: lightgray;
+    border-radius: 0.2em;
+    color: white;
+    text-decoration: none;
+    padding: 0.2em;
+}
+
+.blog-time{
+    /*width: auto;*/
+    float: left;
+    margin: 0.5em;
+    margin-left: 0;
+}
+.blog-read, .blog-comment{
+    /*width: auto;*/
+    float: right;
+    margin: 0.5em;
+}

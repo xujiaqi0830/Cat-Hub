@@ -1,0 +1,164 @@
+.navbar {
+    margin-bottom: 20px
+}
+
+.panel-footer {
+    margin-top: 0.2em;
+}
+
+#edit-zone {
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    position: relative
+}
+
+.board-title {
+    border-left: 8px solid #f7e967;
+    padding-left: .5em;
+    margin-bottom: 1em
+}
+
+.board-title-sm {
+    border-left: 3px solid #f7e967;
+    padding-left: .5em;
+    margin-bottom: 1em;
+    margin-top: 1em
+}
+
+.board-field {
+    height: 7em !important;
+    resize: none
+}
+
+.board-name {
+    max-width: 50%;
+    margin-bottom: 1em;
+    display: inline;
+}
+
+.board-btn {
+    position: absolute;
+    right: .5em;
+    bottom: 0;
+    margin-bottom: 1em
+}
+
+.msg {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid lightgray;
+    margin: 0 auto;
+    padding: 10px 5px 5px 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.msg-left {
+    width: 22%;
+    height: 100%;
+    float: left;
+    padding: 2px;
+    margin: 2px 2px;
+    border: 1px solid #252932;
+    background: lightyellow
+}
+
+.username {
+    font-size: 1.2em;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.check-div {
+    font-size: 1em;
+    line-height: 1em;
+    display: inline;
+    margin-left: 1em;
+}
+
+@media screen and (max-width: 420px){
+    .check-div {
+        display: block;
+        margin: 0;
+        margin-bottom: 1em;
+    }
+}
+
+.time {
+    font-size: .6em;
+    width: 100%;
+    text-align: center;
+    padding-top: .8em;
+    color: #666
+}
+
+.msg-right {
+    max-width: 60%;
+    float: left;
+    padding-left: 2em;
+}
+
+.msg-text {
+    width: 100%;
+    height: 100%;
+    font-size: 1em;
+}
+
+.msg-id{
+    position: absolute;
+    color: #666;
+    right: 0.5em;
+    top: 0.5em;
+}
+
+.confirm-bar{
+    position: absolute;
+    margin-left: -7em;
+    margin-top: -1.2em;
+    display: none;
+    width: 14em;
+    height: 2.4em;
+    font-size: 1.2em;
+    background: lightyellow;
+    border: 1px solid lightgray;
+    border-radius: 0.5em;
+    text-align: center;
+    line-height: 2.4em;
+    color: #696969;
+    z-index: 9999;
+}
+
+.more{
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 0.4em;
+    margin: 0.2em auto 0;
+    padding: 0.7em;
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.5em;
+    background: rgba(202, 252, 216, 0.8);
+    -webkit-transition: 0.2s all;
+    -moz-transition: 0.2s all;
+    -ms-transition: 0.2s all;
+    -o-transition: 0.2s all;
+    transition: 0.2s all;
+}
+
+@media screen and (max-width: 768px){
+    .panel-footer {
+        margin-top: 1.3em;
+    }
+}
+
+.more:hover{
+    background: rgba(202, 252, 216, 1);
+    cursor: pointer;
+    border: 1px solid lightgray;
+}
+.more:active{
+    background: rgba(202, 252, 216, 0.4);
+    cursor: pointer;
+    border: 1px solid lightgray;
+}

@@ -1,0 +1,25 @@
+<!-- {{{content}}} -->
+{{#each post}}
+	<div class="blog-block">
+		<h2><a href="{{post_hash}}">{{post_title}}</a></h2>
+		<!-- <hr class="blog-title-hr"> -->
+		<span>标签:&nbsp;</span>
+		{{#each post_tags}}
+			<a  href="/blog/tag/{{post_tagname}}" class="blog-tagbag">{{post_tagname}}</a>
+		{{/each}}
+		<p class="blog-brief">{{post_brief}}</p>
+		<a class="blog-more" href="{{post_hash}}">点击查看全文</a>
+		<div class="blog-detail clearfix">
+			<p class="blog-time">{{post_time}} 发布</p>
+			<p class="blog-comment">评论: <span>{{post_comment}}</span></p>
+			<p class="blog-read">阅读: <span>{{post_read}}</span></p>
+		</div>
+	</div>
+{{/each}}
+<ul class="paging clearfix" data-total="{{page_total}}" data-now="{{page_now}}">
+	<li>&lt;&lt;</li>
+	<li>&lt;</li>
+	<li class="pag-detail">第<span></span>/<span></span>页</li>
+	<li>&gt;</li>
+	<li>&gt;&gt;</li>
+</ul>

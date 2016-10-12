@@ -1,0 +1,78 @@
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+.panel-footer {
+    margin-top: 10px;
+}
+
+/*窗帘css*/
+.curtain{
+    position: relative;
+    width: 100%;
+    margin-bottom: 1.5em;
+    overflow: hidden;
+}
+.pic-navset{
+    position: absolute;
+    left: 50%;
+    bottom: 6%;
+    z-index: 999;
+}
+.curtain-btn{
+    height: 0.8em;
+    width: 3em;
+    margin: 0.3em;
+    border: 1px solid #333;
+    border-radius: 0.3em;
+    background: rgba(253, 253, 253, 0.4);;
+    float: left;
+}
+.curtain-active{
+    background: rgba(48, 53, 65, 0.4);
+}
+.imgset{
+    position: absolute;
+    height: 100%;
+    width: 300%;
+    left: -100%;
+}
+.curtain-img{
+    height: 100%;
+    width: 33.3333%;
+    float: left;
+}
+/*窗帘css结束*/
+
+/*
+
+.round-place{
+    background: #f5f5f5;
+}
+.side {
+    background: #f5f5f5;
+    border: #ddd;
+    border-radius: 4px;
+    word-wrap: break-word;
+    word-break: normal;
+}
+
+.content {
+    background: #f5f5f5;
+    border: #ddd;
+    border-radius: 4px;
+    word-wrap: break-word;
+    word-break: normal;
+}
+
+.ad {
+    background: #f5f5f5;
+    border: #ddd;
+    border-radius: 4px;
+    word-wrap: break-word;
+    word-break: normal;
+}*/

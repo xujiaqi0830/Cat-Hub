@@ -1,0 +1,14 @@
+<div class="p-blog-main">
+    <p class="p-blog-title">
+        {{postSet.post_title}}
+    </p>
+    {{#each post_tags}}
+        <a  href="/blog/tag/{{post_tagname}}" class="blog-tagbag">{{post_tagname}}</a>
+    {{/each}}
+    <p class="p-blog-time">
+        {{postSet.post_time}}
+    </p>
+    <div class="p-blog-content">
+        {{{postSet.post_content}}}
+    </div>
+</div>

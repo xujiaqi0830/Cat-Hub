@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="shortcut icon" href="/static/img/main-icon.png">
+	<link rel="stylesheet" href="/static/css/bootstrap.min.css" media="screen" title="no title">
+	<link rel="stylesheet" href="/static/css/about.css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="/static/css/common.css" media="screen" title="no title" charset="utf-8">
+	{{#each css}}
+		<link rel="stylesheet" href="/static/css/{{css_name}}" media="screen" title="no title" charset="utf-8">
+	{{/each}}
+	<title>听喵轩 － 关于</title>
+</head>
+
+<body>
+	<!-- Static navbar -->
+	<div class="container" id="top">
+		<nav class="navbar navbar-inverse" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	              	<span class="sr-only">Toggle navigation</span>
+	              	<span class="icon-bar"></span>
+	              	<span class="icon-bar"></span>
+	              	<span class="icon-bar"></span>
+	            </button>
+					<a class="navbar-brand" href="/"><i class="iconfont-title">&#xe600;</i>听喵轩</a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li class=""><a href="/">首页</a></li>
+						<li><a href="/blog/">博客</a></li>
+						<li><a href="/board/">留言板</a></li>
+						<li><a href="#">每日一喵</a></li>
+						<li><a href="#">API</a></li>
+						<li class="active dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">关于本站 <span class="caret"></span></a>
+							<!-- 测试注释 -->
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">捐献！</a></li>
+								<li><a href="#">打赏！</a></li>
+								<li><a href="#">支持本站！</a></li>
+								<li class="divider"></li>
+								<!-- <li class="dropdownrs-header">关于站长</li> -->
+								<li><a href="#">联系方式</a></li>
+								<li><a href="/about/purpose">建站目的</a></li>
+							</ul>
+						</li>
+					</ul>
+					<!-- <ul class="nav navbar-nav navbar-right">
+						<li class=""><a href="./">登录</a></li>
+						<li><a href="../navbar-static-top/">注册</a></li>
+					</ul> -->
+				</div>
+				<!--/.nav-collapse -->
+			</div>
+			<!--/.container-fluid -->
+		</nav>
+	</div>
+	<!-- 导航条结束 -->
+	<!-- 面包屑开始 -->
+	<div class="container">
+		<ol class="breadcrumb">
+			{{#each bread}}
+				<li><a href="{{bread_href}}" class="{{bread_isActive}}">{{bread_name}}</a></li>
+			{{/each}}
+		</ol>
+	</div>
+	<!-- 面包屑结束 -->
+	<!-- 窗帘开始 -->
+	<div class="container">
+		<div class="curtain">
+			<div class="pic-navset clearfix">
+			</div>
+			<div class="imgset clearfix">
+				<img class="curtain-img" src="/static/img/curtain/2.png" alt="curtain">
+				<img class="curtain-img" src="/static/img/curtain/1.png" alt="curtain">
+				<img class="curtain-img" src="/static/img/curtain/4.png" alt="curtain">
+			</div>
+
+		</div>
+	</div>
+	<!-- 窗帘结束 -->
+	{{{body}}}
+	<!-- <div class="container">
+		<div class="panel-footer">
+			<center>
+				<p><a href="mailto:xujiaqi0830@163.com">Xu Jiaqi</a>版权所有</p><br>
+				<p>
+					<a href="#top">返回页面顶端</a>
+				</p>
+			</center>
+		</div>
+	</div> -->
+	<script src="/static/js/jquery-3.1.0.min.js" charset="utf-8"></script>
+	<script src="/static/js/bootstrap.min.js" charset="utf-8"></script>
+	<script src="/static/js/common.js" charset="utf-8"></script>
+	{{#each js}}
+		<script src="/static/js/{{js_name}}" charset="utf-8"></script>
+	{{/each}}
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+{{#each msg}}
+	<div class="msg clearfix">
+		<div class="msg-left">
+			<p class="username">{{msg_name}}</p>
+			<p class="time">{{msg_time}}</p>
+		</div>
+		<div class="msg-right">
+			<div class="msg-text">{{msg_text}}</div>
+		</div>
+		<div class="msg-id">#{{msg_id}}</div>
+	</div>
+{{/each}}
