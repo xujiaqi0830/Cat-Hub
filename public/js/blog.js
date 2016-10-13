@@ -51,7 +51,7 @@ jQuery.fn.extend({
         $(this).on('mouseover mousemove', function(ev){
             var event = ev || window.event;
             var diffX = ev.pageX - $(this).offset().left - $(this).outerWidth() / 2;
-            var diffY = ev.pageY + $(window).scrollTop() - $(this).offset().top - $(this).outerHeight() / 2;
+            var diffY = ev.pageY - $(this).offset().top - $(this).outerHeight() / 2;
             var tempX = - diffX / ($(this).outerWidth() / 2);
             var tempY = - diffY / ($(this).outerHeight() / 2);
             if(diffX < 0 && diffY < 0){
@@ -72,7 +72,7 @@ jQuery.fn.extend({
                 tempX = - tempX;
                 tempY = - tempY;
                 $(this).css({
-                    'transform': 'perspective(800px) rotateY(' + moveDegree * ( - Math.pow(tempX, 2) + 2 * tempX) + 'deg)rotateX(' +  - moveDegree * ( - Math.pow(tempY, 2) + 2 * tempY) + 'deg)'
+                    'transform': 'perspective(800px) rotateY(' + moveDegree * ( - Math.pow(tempX, 2) + 2 * tempX) + 'deg) rotateX(' +  - moveDegree * ( - Math.pow(tempY, 2) + 2 * tempY) + 'deg)'
                 });
             }
         });
