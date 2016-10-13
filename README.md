@@ -15,7 +15,7 @@
 
 ### 作者
 
-> PeowXu
+> Jiaqi Xu
 > ##### 个人博客: [http://xujiaqi0830.com/blog](http://xujiaqi0830.com/blog)
 > ##### 邮箱: [xujiaqi0830@163.com](mailto:xujiaqi0830@163.com)
 
