@@ -5,7 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 // var csurf = require('csurf');
-
+// var ip = require('./routes/route-ip');
 var routes = require('./routes/route-index');
 var board = require('./routes/route-board');
 var blog = require('./routes/route-blog');
@@ -33,7 +33,7 @@ app.use(express.static(path.join(__dirname, '/public')));
 // app.use(function(req, res, next){
 //     res.locals._csrfToken = req.csrfToken();
 // });
-
+// app.use('*', ip);
 app.use('/', routes);
 app.use('/index', routes);
 app.use('/board', board);

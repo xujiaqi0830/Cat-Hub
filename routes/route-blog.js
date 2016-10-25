@@ -82,10 +82,10 @@ router.get('/showpage', function(req, res, next){
         var tempArr = [];
         for(var i = goLine - 1; i < goLine + 9; i += 1){
             if(result[i]){
+                result[i].post_time = moment(result[i].post_time).calendar();
                 tempArr.push(result[i]);
             }
         }
-        result[i].post_time = moment(result[i].post_time).calendar();
         res.send({
             // postCount: count,
             nowPage: goPage,
